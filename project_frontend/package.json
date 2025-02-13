@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "web-vitals": "^4.2.4",
+    "react-bootstrap": "^2.x.x", 
+  "bootstrap": "^5.x.x" 
+  }
+}

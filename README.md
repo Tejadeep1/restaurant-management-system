@@ -15,6 +15,7 @@ Role-based access control (admin, customer)
 
   Database Design
 User Table
+
 id (BIGINT - Primary Key): This field serves as the primary key, ensuring each user has a unique identifier.
 username (VARCHAR(255)): Stores the username of the user.
 password (VARCHAR(255)): Represents the hashed and salted password of the user.
@@ -23,13 +24,19 @@ role (VARCHAR(50)): Denotes the role of the user, which can be "Admin," "Normal 
 is_signed_up (BOOLEAN): Indicates whether the user is signed up (true) or not (false).
 is_signed_in (BOOLEAN): Indicates whether the user is currently signed in (true) or not (false).
 created_at (TIMESTAMP): Records the timestamp of when the user account was created.
+
+
 Food Item Table
+
 id (BIGINT - Primary Key): A unique identifier for each food item.
 name (VARCHAR(255)): The name of the food item.
 description (TEXT): Provides a detailed description of the food item.
 price (DECIMAL(10,2)): Stores the price of the food item with two decimal places.
 type (VARCHAR(50)): Represents the type of food item (e.g., "Appetizer," "Main Course").
+
+
 Order Table
+
 id (BIGINT - Primary Key): A unique identifier for each order.
 user_id (BIGINT - Foreign Key): A foreign key referencing the user who placed the order.
 food_item_id (BIGINT - Foreign Key): A foreign key referencing the ordered food item.
